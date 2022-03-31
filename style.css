@@ -46,6 +46,21 @@
   src: url("fonts/Signika-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "Gotham-Book";
+  src: url("/fonts/Gotham-Book.woff2") format("woff2"),
+    url("/fonts/Gotham-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url("/fonts/Gotham-Bold.woff2") format("woff2"),
+    url("/fonts/Gotham-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /********************************/
 /*****  Variables y  ***********/
 
@@ -56,6 +71,10 @@
   --gray-zenthia: #666666;
   --white: #ffffff;
   --black: #000000;
+}
+
+html {
+  font-size: 10px;
 }
 
 /********************************/
@@ -88,15 +107,11 @@
 /** Tipografías Textos **/
 
 .zenthia-text-regular {
-  font-family: Ubuntu-Regular;
-}
-
-.zenthia-text-medium {
-  font-family: Ubuntu-Medium;
+  font-family: "Gotham-Book", sans-serif!important;
 }
 
 .zenthia-text-bold {
-  font-family: Ubuntu-Bold;
+  font-family: "Gotham-Bold", sans-serif!important;
 }
 
 /** Tamaños de Texto (Títulos y Parrafo) **/
@@ -158,12 +173,20 @@
   background-color: #e9d9cc;
 }
 
+ul {
+    font-family: "Gotham-Book", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
 .tabcontent ul li {
   margin: 20px 0;
   font-size: 1.2em;
+  color: #7d6d6d;
+
 }
 .tabcontent ul li strong {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* CSS CARD BLOG */
